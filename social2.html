@@ -1,0 +1,90 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Social Links Profile</title>
+        <link rel="stylesheet" href="socialstyle2.css">
+    </head>
+        <body>
+            <br>
+            <br>
+            <div class="wrapper">
+            <br>
+            <p class="circular-image"><img src="C:\Users\hp\Desktop\avatar-jessica.jpeg"="my profile pic" ></p>
+            <P id="paragraph" class="align" >Jessica Randall</p>
+            <p id="style" class="align" >London, United Kingdom</p>
+            <p class="style2">"Front end developer and avid reader"</p>
+            <br>
+            <P id="boxmodels" class="align"><a href="https://github.com/snehasaha1101">GitHub</a></P>
+            <p id="boxmodels" class="align"><a href="https://www.linkedin.com/in/sneha-saha-46298b286">Linkedin </a></p>
+            <p id="boxmodels" class="align"><a href="https://www.hackerrank.com/profile/sahasneha1198">HackerRank</a></p>
+            <p id="boxmodels" class="align"><a href="https://leetcode.com/code_sneha/">Leetcode</a></p>
+            <style>
+                
+                .box {
+                    background-color:rgb(183, 176, 176);
+                    border: 1px solid aliceblue;
+                    width:70%;
+                    padding:10;
+                    margin-left: auto;
+                    margin-right: auto;
+                    text-align: center;
+                }
+                
+                
+                .link {
+                  color: #007bff;
+                  text-decoration: none;
+                }
+                .link:hover {
+                  text-decoration: underline;
+                }
+                </style>
+                </head>
+                <body>
+                
+               
+                <button id="addButton">Add a new social media link</button>
+                
+                
+                <div id="contentContainer"></div>
+                
+                <script>
+                document.addEventListener("DOMContentLoaded", function() {
+                  
+                  var addButton = document.getElementById("addButton");
+                  var contentContainer = document.getElementById("contentContainer");
+                  
+                
+                  addButton.addEventListener("click", function() {
+                   
+                    var name = prompt("Enter a name:");
+                    var link = prompt("Enter a link:");
+                    
+                    if (name && link) {
+                      
+                      var box = document.createElement("div");
+                      box.classList.add("box"); 
+                      
+
+                      var anchor = document.createElement("a");
+                      anchor.textContent = name; 
+                      anchor.href = link; 
+                      anchor.classList.add("link"); 
+                      
+                     
+                      box.appendChild(anchor);
+                      
+                      
+                      contentContainer.appendChild(box);
+                    } else {
+                      alert("Both name and link are required.");
+                    }
+                  });
+                });
+                </script>
+                
+            </div>
+            <br>
+        </body>
+</html>

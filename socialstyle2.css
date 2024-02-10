@@ -1,0 +1,59 @@
+.circular-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; /* Makes the element circular */
+    overflow: hidden; /* Hides overflow content */
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .circular-image img {
+    width: 100%; /* Ensures the image fills the circular container */
+    height: auto;
+    display: block; /* Ensures the image behaves like a block element */
+  }body{
+    background-color: black;
+}
+
+#paragraph{
+    color: white;
+    font-size: x-large;
+}
+
+.align
+{
+    text-align:right;
+}
+.style2{
+    color: white;
+    font-size: x-small;
+    text-align: center;
+}
+#boxmodels
+{
+    background-color:rgb(183, 176, 176);
+    border: 1px solid aliceblue;
+    width:70%;
+    padding:10;
+    margin-left: auto;
+    margin-right: auto;
+}
+.align
+{
+    text-align: center;
+}
+.wrapper{
+    width: 100%;
+    background-color: rgb(81, 79, 79);
+    width:35%;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+.img-info{
+    width: 100%;
+} 
+#style{
+    color: aquamarine;
+}
